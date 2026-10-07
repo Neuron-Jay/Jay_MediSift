@@ -217,6 +217,22 @@ python pubmed_search.py
 
 输入研究主题、时间范围、研究类型等需求。程序会显示理解到的条件并直接搜索，然后展示相关性标签和简短理由。用户输入结果序号（例如 `1,3,5-7`）后，所选题录和摘要保存至 `text_file_repository`，可继续交给 `deep_agent.py`。记录中附有 PubMed/PMC 链接以便用户自行获取全文；程序不会自动抓取出版商全文。
 
+### ▶ Streamlit 可视化界面
+
+首次使用时安装 Streamlit：
+
+```bash
+pip install streamlit
+```
+
+在项目根目录启动前端：
+
+```bash
+streamlit run streamlit_app.py
+```
+
+浏览器打开后即可输入自然语言检索、查看摘要并勾选保存文献。请先确认 `.env` 中已配置 `DEEPSEEK_API_KEY`。
+
 ---
 
 ## 💡 项目设计理念
