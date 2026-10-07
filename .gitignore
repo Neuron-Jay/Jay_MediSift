@@ -1,0 +1,5 @@
+.env
+conversations/
+text_file_repository/
+paper_batch/
+papers_analysis_output/
